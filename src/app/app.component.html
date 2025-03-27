@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="toggleSidebar()" class="hamburger-btn">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>TutMe</span>
+</mat-toolbar>
+
+<div class="container">
+  <app-sidebar [isOpen]="isSidebarOpen"></app-sidebar>
+  <main class="content" [class.sidebar-open]="isSidebarOpen">
+    <router-outlet></router-outlet>
+  </main>
+</div>

@@ -1,0 +1,163 @@
+/* Estilos generales */
+.materias-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  color: #205724;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #1f5b31;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid de materias */
+.materias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Cards de materias */
+.materia-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.materia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos por materia */
+.matematicas {
+  border-top: 4px solid #3498db;
+}
+
+.videojuegos {
+  border-top: 4px solid #9b59b6;
+}
+
+.diseño {
+  border-top: 4px solid #e74c3c;
+}
+
+.pwa {
+  border-top: 4px solid #2ecc71;
+}
+
+.poo {
+  border-top: 4px solid #f39c12;
+}
+
+/* Header de la card */
+.materia-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.materia-abrev {
+  background: #f1f1f1;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.rating {
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+/* Contenido */
+h3 {
+  color: #2c3e50;
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.materia-desc {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.materia-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.tutores-count {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* Botón mejorado */
+.tutor-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tutor-btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+.materia-card.marketing {
+  border-top: 4px solid #e74c3c;
+  background: linear-gradient(to bottom, #fff 0%, #fef6f6 100%);
+}
+
+.materia-card.programacion {
+  border-top: 4px solid #3498db;
+  background: linear-gradient(to bottom, #fff 0%, #f6f9fe 100%);
+}
+
+.materia-abrev {
+  font-weight: 700;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+}
+
+.marketing .materia-abrev {
+  background: #e74c3c;
+}
+
+.programacion .materia-abrev {
+  background: #3498db;
+}
+.tutor-btn {
+  background: #4CAF50; /* Verde */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tutor-btn:hover {
+  background: #388E3C; /* Verde oscuro */
+}

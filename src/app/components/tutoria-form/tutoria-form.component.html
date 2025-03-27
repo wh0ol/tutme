@@ -1,0 +1,27 @@
+<form [formGroup]="tutoriaForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" type="email">
+    <mat-error *ngIf="tutoriaForm.get('email')?.hasError('required')">
+      Email es requerido
+    </mat-error>
+    <mat-error *ngIf="tutoriaForm.get('email')?.hasError('email')">
+      Ingresa un email válido
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Horario preferido</mat-label>
+    <input matInput formControlName="horario">
+    <mat-error>Este campo es requerido</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Comentarios adicionales</mat-label>
+    <textarea matInput formControlName="comentarios" rows="3"></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="!tutoriaForm.valid">
+    Enviar Solicitud
+  </button>
+</form>
